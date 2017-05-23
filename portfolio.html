@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Ayan Saha</title>
+<!-- Latest compiled and minified CSS -->
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+ <!--custom styled css-->
+ <link rel="stylesheet" href="portfolio.css">
+ <link href='https://fonts.googleapis.com/css?family=Carme' rel='stylesheet'>
+ <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+  <div class="site-wrapper">
+
+      <div class="site-wrapper-inner">
+       <div id="color-overlay"></div>
+        <div class="container">
+
+          <div class="masthead clearfix">
+            <div class="container inner">
+              <h3 class="masthead-brand">Portfolio</h3>
+              <nav>
+                <ul class="nav masthead-nav">
+                  <li class="active"><a href="#about">ABOUT</a></li>
+                  <li><a href="#skills">SKILLS</a></li>
+                  <li><a href="#contact">CONTACT</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+
+          <div class="inner cover">
+            <h1 class="cover-heading">Ayan Saha</h1>
+            <p class="lead">Hi ,I am full stack engineer with over 2 years experience of website developement using ruby on rails.</p>
+            
+          </div>
+           
+           
+        </div><!--container -->
+
+      </div><!--site wrapper-inner-->     
+    </div><!--site wrapper -->
+    <div class="container-fluid">
+      <div id='about' class="row section-color" style="padding-top: 20px;"><h2>ABOUT</h2></div>
+        <div class="container card" style='background-color: white;margin-bottom:20px;margin-top:20px; '>
+          <div class="row" style='padding-top:20px;color:black;'>
+          <p>Hi there,hope you are having a nice day.Thanks for visiting.I am Ayan Saha ,a person with an eye for a beauty,be it UI design or elegant code  in ruby.</p>
+          <p>
+          I have an experience of 3 years in the software industry,in the development and maintenance of web applications based on Ruby on Rails.I have a degree in engineering in computer science from West Bengal University Of Technology.
+          </p>
+          <p>
+          My hobbies include sports like Cricket and Volleyball ,travelling and reading. 
+            </div>
+        </div>
+    	<div id='skills' class="row section-color"><h2>SKILLS</h2></div>
+    	<div class="container card" style='background-color: white;margin-bottom:20px;margin-top:20px; '>
+         <div class="row brown-text" style='padding-top:20px;'>
+         	<div class="col-sm-4"><img src="html5.png" class="responsive-img">HTML5</div>
+         	<div class="col-sm-4"><img src="css3.png" class="responsive-img">CSS</div>
+         	<div class="col-sm-4"><img src="javascript.png" class="responsive-img">Javascript</div>
+
+         </div>
+         <hr>
+         <div class="row brown-text" style='padding:2px;'>
+         	<div class="col-sm-4"><img src="angular.png" class="responsive-img">Angular JS</div>
+         	<div class="col-sm-4"><img src="jquery.png" class="responsive-img">Jquery</div>
+         	<div class="col-sm-4"><img src="ruby.png" class="responsive-img">Ruby</div>
+         </div><!--row end-->
+         <hr>
+         <div class="row brown-text" style='padding:2px;'>
+         	<div class="col-sm-4"><img src="rails.png" class="responsive-img">Rails</div>
+         	<div class="col-sm-4"><img src="github.png" class="responsive-img">Git</div>
+         	<div class="col-sm-4"><img src="haml.png" class="responsive-img">Haml</div>
+         </div><!--row end-->
+        </div><!--container end --> 
+        <div id='contact' class="row section-color" style="padding-top: 20px;"><h2>CONTACT</h2></div>
+          <div class="container card" style='background-color: white;margin-bottom:20px;margin-top:20px; '>
+          <div class="row" style='padding-top:20px;color:black;'>
+          You can get in touch wih me at <a class="contact-text" href="mailto:ayan.saha91@gmail.com" >ayan.saha91@gmail.com</a>
+          
+            
+             <ul id="menu">
+                <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-github-alt" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-skype" aria-hidden="true"></i></a></li>
+              </ul> 
+            
+            
+          </div>
+        </div>
+    </div>
+      
+    </body>
+    </html>
+
+    <script>
+    $(document).ready(function () {
+    $('.nav li a').click(function(e) {
+
+        $('.nav li').removeClass('active');
+
+        var $parent = $(this).parent();
+        if (!$parent.hasClass('active')) {
+            $parent.addClass('active');
+        }
+       // e.preventDefault();
+    });
+});
+    </script>
